@@ -9,6 +9,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
+    - name: check xcode
+      run: ls -lah /Applications
     - name: build
       run: ./archive.sh
       env:
